@@ -1,0 +1,24 @@
+.side-bar {
+    position: fixed;
+    width: 505px;
+    background-color: #196BD8;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    border: 2px solid #E9ECF4;
+
+}
+.compress {
+    width: 143px;
+}
+.snack {
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    left: 44px;
+}
+.nav-marg {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
