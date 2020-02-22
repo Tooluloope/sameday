@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assests/fonts/HelveticaNeue-Medium 500.otf';
+import '@fortawesome/fontawesome-free/css/all.css'
 
 
 
