@@ -1,0 +1,12 @@
+.dropdown- a {
+    color: white;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding: 12px 10px 12px 84px;
+
+}
+.dropdown- a.isActive {
+    background-color: #CEE6FF;
+    color: #196BD8 !important;
+}

@@ -18,14 +18,26 @@ export const SideBar = () => {
             <div onClick = {() => setOpen(true)} className='nav-marg'>
                 <NavItem open={open} navIcon={dash} navText={'Dashboard'} />
                 <NavItem open={open} isActive={true} navIcon={dash} navText={'Operations'}>
-                   <NavItemChild>
+                   <NavItemChild  notify={1}>
                        Orders
+                   </NavItemChild>
+                   <NavItemChild isActive={true} notify={1}>
+                       Production House
+                   </NavItemChild>
+                   <NavItemChild notify={1}>
+                       Bids
+                   </NavItemChild>
+                   <NavItemChild>
+                       Promotion/Discount
+                   </NavItemChild>
+                   <NavItemChild>
+                       Out Sourcing
                    </NavItemChild>
                 </NavItem>
                 <NavItem open={open} navIcon={dash} navText={'Records'} />
                 <NavItem open={open} navIcon={dash} navText={'Supply Store'} />
                 <NavItem open={open} navIcon={dash} navText={'Market Place'} />
-                <NavItem open={open} navIcon={dash} navText={'Forums'} />
+                <NavItem open={open} navIcon={dash} navText={'Forums'} notify={1} />
             </div>
           
             
