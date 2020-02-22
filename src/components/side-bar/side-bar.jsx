@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import './side-bar.css';
 import { Snack } from '../button/snack';
 import { NavItem } from '../nav-item/nav-item';
-import dash from '../../assests/supply.svg'
+import supply from '../../assests/supply.svg'
+import file from '../../assests/file.svg'
+import chat from '../../assests/chat.svg'
+import dash from '../../assests/dash.svg'
+import cart from '../../assests/cart.svg'
+import time from '../../assests/time.svg'
+
+
+
+
 import { NavItemChild } from '../nav-item-child/nav-item-child';
 
 
@@ -17,14 +26,14 @@ export const SideBar = () => {
           
             <div onClick = {() => setOpen(true)} className='nav-marg'>
                 <NavItem open={open} navIcon={dash} navText={'Dashboard'} />
-                <NavItem open={open} isActive={true} navIcon={dash} navText={'Operations'}>
-                   <NavItemChild  notify={1}>
+                <NavItem open={open} isActive={true} navIcon={time} navText={'Operations'}>
+                   <NavItemChild size='smm' notify={1}>
                        Orders
                    </NavItemChild>
-                   <NavItemChild isActive={true} notify={1}>
+                   <NavItemChild size='smm' isActive={true} notify={1}>
                        Production House
                    </NavItemChild>
-                   <NavItemChild notify={1}>
+                   <NavItemChild size='smm' notify={1}>
                        Bids
                    </NavItemChild>
                    <NavItemChild>
@@ -34,10 +43,10 @@ export const SideBar = () => {
                        Out Sourcing
                    </NavItemChild>
                 </NavItem>
-                <NavItem open={open} navIcon={dash} navText={'Records'} />
-                <NavItem open={open} navIcon={dash} navText={'Supply Store'} />
-                <NavItem open={open} navIcon={dash} navText={'Market Place'} />
-                <NavItem open={open} navIcon={dash} navText={'Forums'} notify={1} />
+                <NavItem open={open} navIcon={file} navText={'Records'} />
+                <NavItem open={open} navIcon={cart} navText={'Supply Store'} />
+                <NavItem open={open} navIcon={supply} navText={'Market Place'} />
+                <NavItem open={open} navIcon={chat} navText={'Forums'} size='smm' notify={1} />
             </div>
           
             

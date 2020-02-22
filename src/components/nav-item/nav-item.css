@@ -58,15 +58,13 @@
     background-clip: padding-box;
     border: 0px solid rgba(0,0,0,.15);
   }
-.dropdown- a {
-    color: white;
-    display: block;
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    padding: 12px 10px 12px 84px;
-
+.not-open {
+    border: 0px solid black;
 }
-.dropdown- a.isActive {
-    background-color: #CEE6FF;
-    color: #196BD8 !important;
+
+.not-open .nav-icon {
+    margin-left: 45px;
+}
+.not-open.isActive {
+    background-color: #196BD8;
 }
