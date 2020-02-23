@@ -5,7 +5,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { Notify } from '../notify/notify';
 
 
-export const NavItem = ({navIcon, navText , isActive, children, open, notify, size}) => {
+export const NavItem = ({navIcon, navText , isActive, children, open, notify, size, color}) => {
     const [drop, setDrop] = useState(false)
     const handleDropdown = () => {
        if (open && children) {
@@ -25,7 +25,7 @@ export const NavItem = ({navIcon, navText , isActive, children, open, notify, si
                {open &&(
                    <>
                         <span className='nav-text'>
-                            {navText} { notify && <Notify size={size}>{notify}</Notify>}
+                            {navText} { notify && <Notify color={color} size={size}>{notify}</Notify>}
                         </span>
                         <span>
                             {children && <FontAwesomeIcon size="lg" className='fa-icon' color={`${drop ? 'white': '#196BD8'}`} icon={faCaretDown} />}
