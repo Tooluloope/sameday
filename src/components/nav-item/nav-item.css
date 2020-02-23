@@ -63,7 +63,7 @@
 }
 
 .not-open .nav-icon {
-    margin-left: 45px;
+    margin-left: 20px;
 }
 .not-open.isActive {
     background-color: #196BD8;

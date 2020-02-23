@@ -17,17 +17,25 @@ import { TopNav } from '../topnav/top-nav';
 
 
 
-export const SideBar = () => {
+export const SideBar = ({getOpen}) => {
+    
     const [open, setOpen] = useState(true)
+
+    
     return(
         <>
             <TopNav open={open} />
             <div  className={`side-bar ${!open && 'compress'}` }>
-                <div className='snack' onClick = {() => {setOpen(open => !open)}}>
+                <div className='snack' onClick = {() => {
+                    setOpen(open => !open)
+                    getOpen(open)}}>
                     <Snack animate={open} />
                 </div>
             
-                <div onClick = {() => setOpen(true)} className='nav-marg'>
+                <div 
+                // onClick = {() => {setOpen(true)
+                //     getOpen(open)}} 
+                    className='nav-marg'>
                     <NavItem open={open} navIcon={dash} navText={'Dashboard'} />
                     <NavItem open={open} isActive={true} navIcon={time} navText={'Operations'}>
                     <NavItemChild size='smm' notify={1} color={'#D80B0B'}>

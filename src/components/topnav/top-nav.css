@@ -5,7 +5,7 @@
     position: relative;
 }
 .big-nav {
-    margin-left: 143px;
+    margin-left: 80px;
 }
 
 .small-nav {
@@ -84,12 +84,12 @@ li.search:hover {
     border: 0px solid #B4B4B4;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+/* .navigation-links li input[type="search"]::-webkit-search-decoration,
+.navigation-links li input[type="search"]::-webkit-search-cancel-button,
+.navigation-links li input[type="search"]::-webkit-search-results-button,
+.navigation-links li input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
-}
+} */
 
 
 

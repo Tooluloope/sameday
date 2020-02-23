@@ -2,3 +2,8 @@
     font-family: 'Helvetica Neue';
     src: local('Helvetica Neue'), url(./assests/fonts/HelveticaNeue-Medium\ 500.otf) format('truetype');
   }
+
+body {
+  font-family: 'Helvetica Neue' !important;
+}
+textarea, select, input, button { outline: none; }
