@@ -32,7 +32,7 @@ export const TopNav = ({open}) => {
                     <img src={shopping} alt='shopping' /> <Notify className='top-notify' color={'#007BFF'} size={'smm'}>1</Notify>
                     Market Place <FontAwesomeIcon size="lg" className='fa-icon-top' color='#4B4B4B' icon={faCaretDown} />
                 </li>
-                <li className="active">
+                <li className="">
                     <img src={menu} alt='shopping' /> <Notify className='top-notify' color={'#007BFF'} size={'smm'}>1</Notify>
                     Notifications
                 </li>

@@ -1,0 +1,11 @@
+.absolute {
+    position: absolute;
+    padding: 20px;
+    background-color: #1a3a54;
+    border-radius: 10px;
+    top: 100px;
+    left: 420px;
+}
+.absolute p {
+    color :white;
+}
