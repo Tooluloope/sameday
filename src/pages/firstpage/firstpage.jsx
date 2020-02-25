@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
 import './firstpage.css';
 import product from '../../assests/product (1).svg'
-import { Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Notify } from '../../components/notify/notify';
 import { Tables } from '../../components/table/table';
-import { Hover } from '../../components/hover/hover';
 
 export const FirstPage = ({open}) => {
 
